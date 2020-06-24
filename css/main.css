@@ -86,3 +86,22 @@ html {
 -------------------------------------------------------------- */
 
 /* -- HEADER -- */
+
+@media only screen and (max-width: 768px) {
+	.hide-sm {
+	display: none;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.hide-md {
+	display: none;
+	}
+}
+
+
+@media only screen and (min-width: 1024px) {
+	.hide-lg {
+	display: none;
+	}
+}
