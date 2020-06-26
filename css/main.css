@@ -42,7 +42,10 @@
 -------------------------------------------------------------- */
 
 html {
-	font-size: 1rem;
+	background-color: #4B1302;
+	color: #FFF;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1rem;	
 }
 
 @media only screen and (min-width: 768px) {
@@ -61,6 +64,32 @@ html {
 /*--------------------------------------------------------------
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
+
+a {
+	color: #FFF;
+	text-decoration:none;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+header nav {
+	text-align: right;
+}
+
+header nav li {
+	margin-left: 4rem;
+}
+
 
 /* -- TYPOGRAPHY -- */ 
 
@@ -87,21 +116,49 @@ html {
 
 /* -- HEADER -- */
 
+/* -- BUTTONS -- */
+
+.btn {
+	padding: .75em 1.5rem;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 3rem 0;
+	border: 2px #FFF solid;
+	color: #FFF;
+}
+
+.btn:hover {
+	background-color: #FFF;
+	color: #4B1302;
+	opacity: 1.0
+}
+
+/* -- LAYOUT -- */
+
+header nav {
+	margin-top: 40px;
+}
+
+header nav li {
+	display: inline-block;
+}
+
+
+/*--------------------------------------------------------------
+7.0 - UTILITIES
+-------------------------------------------------------------- */
+
 @media only screen and (max-width: 768px) {
 	.hide-sm {
-	display: none;
+		display: none;
 	}
 }
 
-@media only screen and (max-width: 1024px) {
-	.hide-md {
-	display: none;
-	}
+.f-right {
+	float: right;
 }
 
-
-@media only screen and (min-width: 1024px) {
-	.hide-lg {
-	display: none;
-	}
+.logo:hover {
+	opacity: 0.6;
 }
