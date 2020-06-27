@@ -116,6 +116,45 @@ header nav li {
 
 /* -- HEADER -- */
 
+#hero {
+	background: url("../img/hero.jpg") no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding: 1rem;
+}
+
+#hero > div {
+	padding-top: rem;
+}
+
+#hero > div:last-child {
+	padding-bottom: 2rem;
+}
+
+#hero > div > div > p:first-child {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+#hero > div > div > p:nth-child(2) {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: .5rem 0;
+}
+
+#hero > div > div > p:nth-child(3) {
+	margin: 6rem 0;
+}
+
+#hero div.col-sm-12 {
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
 /* -- BUTTONS -- */
 
 .btn {
@@ -142,6 +181,10 @@ header nav {
 
 header nav li {
 	display: inline-block;
+}
+
+#roasts>header:after {
+	border: 2px #FFF solid;
 }
 
 
