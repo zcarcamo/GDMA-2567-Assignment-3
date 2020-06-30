@@ -45,12 +45,13 @@ html {
 	background-color: #4B1302;
 	color: #FFF;
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: 1rem;	
+	font-size: .9rem;
+	line-height: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
 	html {
-		font-size: 1rem;
+		font-size: .95rem;
 	}
 }
 
@@ -90,7 +91,6 @@ header nav li {
 	margin-left: 4rem;
 }
 
-
 /* -- TYPOGRAPHY -- */ 
 
 
@@ -100,6 +100,12 @@ header nav li {
 
 @media only screen and (min-width: 1024px) {
 	
+}
+
+h2 {
+	background-color: #4B1302;
+	display: inline;
+	padding: 0 20px;
 }
 
 /*--------------------------------------------------------------
@@ -149,12 +155,6 @@ header nav li {
 	margin: 6rem 0;
 }
 
-#hero div.col-sm-12 {
-	float: none;
-	margin: 0 auto;
-	text-align: center;
-}
-
 /* -- BUTTONS -- */
 
 .btn {
@@ -183,19 +183,19 @@ header nav li {
 	display: inline-block;
 }
 
-#roasts>header:after {
-	border: 2px #FFF solid;
-}
 
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES
 -------------------------------------------------------------- */
 
-@media only screen and (max-width: 768px) {
-	.hide-sm {
-		display: none;
-	}
+.center  {
+	float: none;
+	margin: 0 auto;
+}
+
+.t-center {
+	text-align: center;
 }
 
 .f-right {
@@ -204,4 +204,41 @@ header nav li {
 
 .logo:hover {
 	opacity: 0.6;
+}
+
+.h2 {
+	margin: 75px 0 125px 0;
+}
+
+.h2-box {
+	position: relative;
+}
+
+.h2-box:after {
+	content: "";
+	display: inline-block;
+	border: 2px #FFF solid;
+	width: calc(100%*12/12);
+	height: 100px;
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	z-index: -1;
+}
+
+@media only screen and (max-width: 768px) {
+	.hide-sm {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1024px and min-width: 768px) {
+	#roasts div.row div {
+		display: table;
+		clear: both;
+	}
+	
+	.f-right-md {
+		float: right;
+	}
 }
