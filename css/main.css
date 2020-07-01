@@ -37,16 +37,20 @@
 
 --------------------------------------------------------------*/
 
+* {
+	color: #FFF;
+	font-family: 'Nunito Sans', sans-serif;
+	line-height: 1.5rem;
+}
+
+
 /*--------------------------------------------------------------
 3.0 - GENERIC
 -------------------------------------------------------------- */
 
 html {
 	background-color: #4B1302;
-	color: #FFF;
-	font-family: 'Nunito Sans', sans-serif;
 	font-size: .9rem;
-	line-height: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -83,12 +87,31 @@ li {
 	list-style-type: none;
 }
 
+span {
+	display: none;
+}
+
+#social li {
+	display: inline-block;
+	margin-right: 2.5rem;
+}
+
+#social li a:hover {
+	color: #CE3A3A;
+	opacity: 1.0;
+}
+
 header nav {
 	text-align: right;
 }
 
 header nav li {
 	margin-left: 4rem;
+}
+
+header nav a {
+	color: #FFF;
+	font-weight: 800;
 }
 
 /* -- TYPOGRAPHY -- */ 
@@ -173,6 +196,10 @@ h2 {
 	opacity: 1.0
 }
 
+.btn-shop {
+	margin-top: 2rem;
+}
+
 /* -- LAYOUT -- */
 
 header nav {
@@ -202,10 +229,6 @@ header nav li {
 	float: right;
 }
 
-.logo:hover {
-	opacity: 0.6;
-}
-
 .h2 {
 	margin: 75px 0 125px 0;
 }
@@ -224,6 +247,28 @@ header nav li {
 	top: 10px;
 	left: 0px;
 	z-index: -1;
+}
+
+#quote {
+	position: relative;
+}
+
+#quote:after {
+	content: "";
+	display: inline-block;
+	border: 2px #FFF solid;
+	width: 250px;
+	height: 250px;
+	transform: rotate(45deg);
+	position: absolute;
+	top: -50px;
+	left: 40%;
+	z-index: -1;
+}
+
+fieldset {
+    border-width: 0px;
+    border-style: none;
 }
 
 @media only screen and (max-width: 768px) {
