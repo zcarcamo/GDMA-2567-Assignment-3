@@ -79,28 +79,6 @@ a:hover {
 	opacity: 0.6;
 }
 
-ul {
-	padding: 0;
-}
-
-li {
-	list-style-type: none;
-}
-
-span {
-	display: none;
-}
-
-#social li {
-	display: inline-block;
-	margin-right: 2.5rem;
-}
-
-#social li a:hover {
-	color: #CE3A3A;
-	opacity: 1.0;
-}
-
 header nav {
 	text-align: right;
 }
@@ -114,21 +92,29 @@ header nav a {
 	font-weight: 800;
 }
 
+/* -- LISTS --*/
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
 /* -- TYPOGRAPHY -- */ 
-
-
-@media only screen and (min-width: 768px) {
-	
-}
-
-@media only screen and (min-width: 1024px) {
-	
-}
 
 h2 {
 	background-color: #4B1302;
 	display: inline;
 	padding: 0 20px;
+	position: relative;
+	top: -.5em;
+	left: 0;
+}
+
+span {
+	display: none;
 }
 
 /*--------------------------------------------------------------
@@ -156,26 +142,28 @@ h2 {
 }
 
 #hero > div {
-	padding-top: rem;
+	padding-top: .5em;
 }
 
 #hero > div:last-child {
-	padding-bottom: 2rem;
+	padding-bottom: 2em;
 }
 
-#hero > div > div > p:first-child {
+#hero p:first-child {
 	font-size: 2rem;
 	font-weight: 700;
+	margin-bottom: .5em;
 }
 
-#hero > div > div > p:nth-child(2) {
+#hero p:nth-child(2) {
 	font-size: 1.5rem;
 	font-weight: 700;
 	margin: .5rem 0;
+	line-height: 1.5em;
 }
 
-#hero > div > div > p:nth-child(3) {
-	margin: 6rem 0;
+#hero p:nth-child(3) {
+	margin: 2em 0 5em;
 }
 
 /* -- BUTTONS -- */
@@ -185,19 +173,16 @@ h2 {
 	text-decoration: none;
 	font-size: 1rem;
 	font-weight: 700;
-	margin: 3rem 0;
+	margin: 1em 0;
 	border: 2px #FFF solid;
 	color: #FFF;
+	display: inline-block;
 }
 
 .btn:hover {
 	background-color: #FFF;
 	color: #4B1302;
-	opacity: 1.0
-}
-
-.btn-shop {
-	margin-top: 2rem;
+	opacity: 1.0;
 }
 
 /* -- LAYOUT -- */
@@ -210,7 +195,15 @@ header nav li {
 	display: inline-block;
 }
 
+body>footer {
+	background-color: #000;
+	padding-top: 2em;
+}
 
+#social li {
+	display: inline-block;
+	margin-right: 2.5rem;
+}
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES
@@ -229,24 +222,9 @@ header nav li {
 	float: right;
 }
 
-.h2 {
-	margin: 75px 0 125px 0;
-}
-
-.h2-box {
-	position: relative;
-}
-
-.h2-box:after {
-	content: "";
-	display: inline-block;
+.bg-box {
 	border: 2px #FFF solid;
-	width: calc(100%*12/12);
-	height: 100px;
-	position: absolute;
-	top: 10px;
-	left: 0px;
-	z-index: -1;
+	margin: 5em 0 3em;
 }
 
 #quote {
@@ -264,6 +242,14 @@ header nav li {
 	top: -50px;
 	left: 40%;
 	z-index: -1;
+}
+
+.text-red {
+	color: #CE3939;
+}
+
+.fab:hover {
+	color: #CE3939;
 }
 
 fieldset {
