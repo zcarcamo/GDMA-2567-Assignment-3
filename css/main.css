@@ -138,10 +138,10 @@ header nav {
 
 header nav li {
 	display: inline-block;
-}
+} 
 
 #process img {
-	padding: 0 5rem;
+	max-width: 50%;
 }
 
 body>footer {
@@ -164,13 +164,6 @@ body>footer {
 #quote>p:first-child {
 	padding-top: 7.75em;
 	margin-top: 3.5em;
-}
-
-@media only screen and (max-width: 1024px and min-width: 768px) {
-	#roasts div.row div {
-		display: table;
-		clear: both;
-	}
 }
 
 /* -- TYPOGRAPHY -- */
@@ -270,18 +263,17 @@ header nav a {
 .bg-box {
 	border: 2px #FFF solid;
 	margin: 5em 0 3em;
+	padding: 0 1em 2em;
+}
+
+.txt-left {
+	text-align: left;
 }
 
 
 @media only screen and (max-width: 768px) {
 	.hide-sm {
 		display: none;
-	}
-}
-
-@media only screen and (max-width: 1024px and min-width: 768px) {
-	.f-right-md {
-		float: right;
 	}
 }
 
